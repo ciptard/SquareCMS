@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title><square:page_name /> - <square:site_name /></title>
+	<link rel="stylesheet" href="<square:theme_dir />style.css" type="text/css" />
+	<square:site_meta />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="wrapper">
+	<h1><square:site_name /></h1>
+	<div class="strip">
+		<square:blog_nav />
+		<span><square:site_tagline /></span>
+	</div>
+	<div class="aside">
+		<form action="<square:url />" method="get" class="search">
+			<fieldset>
+				<input type="text" name="s" id="search" />
+				<button name="submit" type="submit" value="Search">Search</button>
+				<input type="hidden" name="cmd" value="search" />
+			</fieldset>
+		</form>
+		<square:footer />
+	</div>
+	<div class="content">
+		<square:page_content />
+	</div>
+	<div class="footer">
+		<p><square:site_footer /> - Default 2.0.1 by Thomas Chatting</p>
+	</div>
+</div>
+</body>
+</html>

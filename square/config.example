@@ -1,0 +1,4 @@
+<?php
+	$dbsettings = array('host' => 'SERVER', 'username' => 'USERNAME', 'password' => 'PASSWORD', 'database' => 'DATABASE');
+	$dbprefix	= 'square_';
+?>

@@ -1,0 +1,22 @@
+<div id="tags">
+<hr />
+	<div id="left" class="tag">
+		<p class="date"><strong><square:tag_search /></strong></p>
+	</div>
+	<div id="right" class="tag">
+		<p></p>
+	</div>
+	<square:foreach_result>
+	<hr />
+	<div id="left">
+		<p class="date"><square:article_date_short /> <em><square:article_wordcount /> words.</em></p>
+	</div>
+	<div id="right">
+		<h1><a href="<square:article_permalink />"><square:article_title /></a></h1>
+	</div>
+	</square:foreach_result>
+	<square:if_zero_results>
+	<p>There we no posts found with the tag <square:tag_search />, make sure you followed a link from a post else use the search box above.</p>
+	</square:if_zero_results>
+	<?php } } ?>
+</div>

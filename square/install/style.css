@@ -1,0 +1,26 @@
+@import url("../admin/admin.css");
+html, body {background: #fff;}
+.wrapper {width: 400px !important; margin: 0 auto; border: 0 !important;}
+.agreement {width: 390px; height: 300px; overflow-y: scroll; border: 1px solid #000; background: #fff; padding: 5px;}
+span.can, span.cannot {font-weight: bold;}
+span.can {color: #2BC018;}
+span.cannot {color: #C02B18;}
+.checkbox {width: 15px;}
+.right {float: right;}
+.fail {color: #C02B18; font-weight: bold;}
+form#database p {width: 250px; margin: 0 auto; clear: both; padding-buttom: 5px;}
+form#database label {float: left;}
+form#database input, form#database select {float: right;}
+ul.test {list-style:none; margin:0; padding: 0;}
+ul.test li {padding-left: 20px; display: block; padding-bottom: 5px;}
+ul.test li.pending {background: url('icons/pending.png') no-repeat; }
+ul.test li.pass {background: url('icons/pass.png') no-repeat; }
+ul.test li.warn {background: url('icons/warning.png') no-repeat; }
+ul.test li.fail {background: url('icons/fail.png') no-repeat; }
+span.info {color: #C02B18;}
+span.pass {color: #2BC018;}
+form.server input, form.server select {float: right; width: 200px; font-size: 14px;}
+form.server label {display: block; line-height: 1.5em; width: 300px;}
+form.server hr {clear:both; padding-top: 5px;}
+textarea#config {width: 390px; height: 300px; font-size: 12px; font-family: Consolas, 'Courier New', Courier;}
+button {clear:both;}

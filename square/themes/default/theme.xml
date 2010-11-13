@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<name>Default Theme</name>
+	<dir>default</dir>
+	<author>Thomas Chatting</author>
+	<url>http://spoolio.co.cc/</url>
+	<version>1.0.1</version>
+	<description>The default theme for SquareCMS</description>
+	<screenshot>http://spoolio.po.gs/default.png</screenshot>
+	<screenshot_thumb>http://spoolio.po.gs/default_thumb.png</screenshot_thumb>
+</theme>

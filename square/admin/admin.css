@@ -1,0 +1,80 @@
+﻿@media screen and (max-device-width: 480px){
+	html 							{font: 14px Helvetica, Arial, sans-serif; background: #eee; color: #333; width: 320px !important;}
+	body 							{margin: 0 !important; padding: 0 !important; -webkit-text-size-adjust:none; width: 100% !important;}
+	h1.header, ul.meta				{padding: 1px !important;}
+	ul.navigation					{width: 100% !important;}
+	ul.navigation li 				{display: block; font-size: 14px !important; line-height: 50px; width: 75px !important;}
+	ul.sub_navigation				{width: 100% !important; list-style:none; margin: 0; padding: 0; background: #E5841B; min-height: 30px; height: auto !important;}
+	ul.sub_navigation li 			{display: inline-block; width: 100px; font-size: 16px; line-height: 30px; text-align: center; padding-top: 0;}
+
+	div.wrapper						{max-width: 95% !important; margin-top: 25px; margin-bottom: 20px; padding: 5px; margin: 0 auto;}
+	div.page	 					{width: 100%; border-top: 1px solid #AAA; padding-top: 10px;}
+	div.page div, fieldset			{display: block !important; clear: both !important; width: 100% !important; float: none !important;}
+	div.center						{margin-left: 0 !important;}
+	
+	input, textarea					{font-size: 16px !important;}
+}
+
+img								{border: 0;}
+html 							{font: 14px Helvetica, Arial, sans-serif; background: #eee; color: #333;}
+body 							{width: 960px; margin: 0 auto;}
+a, a:link 						{color: #E5841B; text-decoration: none;}
+a:hover							{text-decoration: underline;}
+h1.header 						{text-transform: uppercase; font-size: 35px; padding: 0; margin: 0; line-height: 25px; margin-top: 20px;}
+h1.header span 					{color: #E5941B;}
+ul.meta							{list-style: none; margin:0; padding: 0; position: relative;}
+ul.meta li 						{display: inline;}
+ul.meta li:last-child			{float: right;}
+ul.navigation					{clear: both; width: 100%; list-style: none; margin: 0; padding: 0; background: #444; height: 50px; margin-top: 25px;}
+ul.navigation li 				{display: block; color: #fff; font-size: 18px; text-transform: uppercase; line-height: 50px; width: 150px; padding:0; margin: 0; float: left; text-align: center;}
+ul.navigation li a 				{color: #fff; text-decoration: none;}
+ul.navigation li:hover			{background: #222;}
+ul.sub_navigation				{width: 960px; list-style:none; margin: 0; padding: 0; background: #E5841B; height: 30px;}
+ul.sub_navigation li 			{display: inline-block; width: 100px; font-size: 16px; line-height: 30px; text-align: center; padding-top: 0;}
+ul.sub_navigation li a 			{color: #fff;}
+ul.sub_navigation li a:hover	{text-decoration: none;}
+
+div.wrapper						{width: 100%-10px; border: 1px solid #ccc; margin-top: 25px; background: #fff; padding: 10px; margin-bottom: 20px; clear: both;}
+div.wrapper h1.page				{font: 22px Georgia, Times, sans-serif; margin: 0; padding: 0;}
+div.wrapper h2.page				{font: 18px Georgia, Times, sans-serif; margin: 0; padding: 0;}
+div.page	 					{width: 100%; border-top: 1px solid #AAA; padding-top: 10px;}
+div.page div.left 				{width: 200px; float: left;}
+div.page div.right 				{width: 200px; float: right;}
+div.page div.center 			{width: 500px; float: left; margin-left: 15px;}
+p.footer						{text-align: right; color: #ccc; font-style: italic; clear: both;}
+
+fieldset 						{border: 0; margin: 0; padding: 0;}
+input, textarea 				{width: 100%; outline: 0; border: 1px solid #AAA; padding: 2px;}
+input:focus, textarea:focus 	{border: 1px solid #E5841B;}
+textarea 						{width: 100%; font: 14px Helvetica, Arial, sans-serif; height: 400px; margin: 0; padding: 2px;}
+input.title 					{font-size: 22px;}
+input[type="checkbox"]			{width: auto;}
+label 							{display: block; padding-bottom: 15px;}
+button.commit					{border: 1px solid #D07D12; background: #E5841B; color: #fff; float: right; font-size: 18px; height: 50px; width: 150px;}
+.alert							{border:solid 1px #DEDEDE; background:rgb(252,249,206); color:#222222; padding:4px; text-align:center; margin-top: 20px;}
+table#manage-posts				{width: 100%; border: 0;}
+table#manage-posts th			{text-align: left;}
+table#manage-posts .action		{width: 15px; text-align: center;}
+table#manage-posts .id			{width: 20px;}
+table#manage-posts .date		{width: 100px;}
+table#manage-posts .status		{width: 75px;}
+table#manage-posts .trash-tion	{width: 150px;}
+
+.stats 						{width: 75px; height: 50px; float: left;}
+.stats h2 					{font-size: 40px; text-align: center; font-weight: bold; line-height: 1em; padding: 0; margin: 0;}
+.stats p 					{text-align: center;}
+.stats h2.square			{width: 40px; height: 40px; background: #555; text-align: center; margin: 0 auto; box-shadow: 0 0 1px #eee;}
+h2.square.major 			{background: #FF2400;}
+h2.square.minor 			{background: #99BFD9;}
+
+table tr, td						{vertical-align:top;}
+
+.themes 					{clear: both; padding-top: 10px; width: 500px;}
+.themes img 				{float: left; width: 200px; min-height: 100px; max-height: 100px; padding-top: 15px;}
+.themes .right				{float: right; width: 250px; padding: 0; padding-left: 5%; margin: 0; margin-bottom: 5px; line-height: 12px;}
+
+form.settings 				{width: 300px;}
+form.settings input, form.settings select
+	{width: 300px !important; font-size: 16px; display: block;}
+form.settings input[type="checkbox"] {width: auto !important; max-width: 12px !important; display: inline !important;}
+form.settings label 		{padding: 0; margin: 0; padding-top: 10px;}

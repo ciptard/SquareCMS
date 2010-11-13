@@ -1,0 +1,16 @@
+<div id="about">
+	<h1>You searched for &ldquo;<square:search_term />&rdquo;.</h1>
+	<p>There were <square:num_results /> results found for this search term.</p>
+</div>
+
+<div id="tags">
+	<square:foreach_result>
+	<hr />
+	<div id="left">
+		<p class="date"><square:article_date_short /> <em><square:article_wordcount /> words.</em></p>
+	</div>
+	<div id="right">
+		<h1><a href="<square:article_permalink />"><square:article_title /></a></h1>
+	</div>
+	</square:foreach_result>
+</div>

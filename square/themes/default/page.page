@@ -1,0 +1,4 @@
+<h1><square:page_title /></h1>
+<div class="main">
+	<square:page_content />
+</div>

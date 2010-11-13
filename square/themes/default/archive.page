@@ -1,0 +1,14 @@
+<square:foreach_post>
+	<div class="article archives">
+		<h1><a href="<square:article_permalink />"><square:article_title /></a> <span><square:article_edit_link /></span></h1>
+		<p class="meta">
+			<span class="date"><a href="<square:article_permalink />"><square:article_date /></a> &ndash; </span>
+			<span class="tags"><square:article_tags /></span>
+		</p>
+		<div class="main">
+			<square:article_content />
+		</div>
+	</div>
+</square:foreach_post>
+<p class="lastPost"><square:next_page /> &gt;</p>
+<p class="nextPost">&lt; <square:prev_page /></p>
