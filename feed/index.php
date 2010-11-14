@@ -1,5 +1,7 @@
 <?php
+/* Note that currently hard-coded values are used for includes, this'll need fixing */
 ob_start();
+include('../square/config.php');
 include('../square/controllers/base.php');
 include('../square/controllers/settings.php');
 $conn = mysql_connect($dbsettings['host'], $dbsettings['username'], $dbsettings['password']) or die (mysql_error());
