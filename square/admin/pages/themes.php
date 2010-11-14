@@ -3,7 +3,7 @@
 if ($_POST["submit"]) {
 	$dir = $_POST["submit"];
 	mysql_query("UPDATE $settings SET `value` = '$dir' WHERE `name` = 'theme' ");
-	header("Location: ./?cmd=theme");
+	header("Location: ./?cmd=themes");
 }
 function value_in($element_name, $xml, $content_only = true) {
 	if ($xml == false) {
@@ -62,7 +62,7 @@ if ($handle = opendir('themes/')) {
 				if ($iscurrent == true) {
 					echo '<p><button name="current" type="button" value="current" class="submit">Current Theme</button></p>';
 				} else {
-					echo '<form method="post" action="./?cmd=theme""><p><button name="submit" type="submit" value="'.$dir.'" class="submit">Set as Theme</button></p></form>';
+					echo '<form method="post" action="./?cmd=themes""><p><button name="submit" type="submit" value="'.$dir.'" class="submit">Set as Theme</button></p></form>';
 				}
 				echo '</div></div>';
 			}
