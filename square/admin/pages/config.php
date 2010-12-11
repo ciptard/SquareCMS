@@ -26,7 +26,7 @@ if ($_POST["save_settings"]) {
 	$new_settings['site_name'] = mysql_real_escape_string($_POST['site_name']);
 	$new_settings['tagline'] = mysql_real_escape_string($_POST['tagline']);
 	$new_settings['username'] = mysql_real_escape_string($_POST['new_username']);
-	if (!empty($_POST["new_password"])) {
+	if ($_POST["new_password"] != null) {
 		$new_settings['password'] = md5($_POST["newpassword"]);
 	} else {
 		$new_settings['password'] = PASSWORD;
