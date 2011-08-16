@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+	RewriteEngine	on
+
+	RewriteCond		%{REQUEST_FILENAME} !-s
+
+	RewriteRule		^(articles)(/.*)?$ 	index.php		[L]
+	RewriteRule		^([0-9]+)$			index.php?ui=$1	[L]
+	RewriteRule		^tags/([^/\.]+)/?$	index.php		[L]
+	RewriteRule		^(page)(/.*)?$ 		index.php		[L]
+	RewriteRule		^(p)(/.*)?$ 		index.php		[L]
+	RewriteRule		^(s)(/.*)?$ 		index.php		[L]
+</IfModule>

@@ -108,7 +108,7 @@
 		$base = LOCAL_THEME_DIR.'index.page';
 		$base = explode('<square:page_content />', parse_theme_template(file_get_contents($base)));
 		$file = $base[0];
-		if (file_exists(THEME_DIR.$page.'.page')) {$file .= parse_page(file_get_contents(THEME_DIR.$page.'.page'));} else {$file .= parse_page(file_get_contents(SOFT_NAME.'/themes/default/'.$page.'.page'));}
+		if (file_exists(LOCAL_THEME_DIR.$page.'.page')) {$file .= parse_page(file_get_contents(LOCAL_THEME_DIR.$page.'.page'));} else {$file .= parse_page(file_get_contents(SOFT_NAME.'/themes/default/'.$page.'.page'));}
 		$file .= $base[1];
 		return $file;
 	}
