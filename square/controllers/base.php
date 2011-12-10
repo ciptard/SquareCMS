@@ -1,6 +1,6 @@
 <?php
 	error_reporting(E_ALL^E_NOTICE);
-	define('VERSION',	'1.0.0');		/* Defining the version */
+	define('VERSION',	'1.0.1');		/* Defining the version */
 
 	define('DOMAIN', 	preg_replace('#^www\.#', '', $_SERVER['SERVER_NAME']));					/* Gets domain.com */
 	define('URL', 		str_replace('index.php', '', 'http://'.DOMAIN.$_SERVER['PHP_SELF']));	/* Turns domain.com into http://domain.com/dir/ */
