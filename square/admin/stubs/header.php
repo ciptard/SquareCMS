@@ -48,7 +48,6 @@
 		<li class="port"><a href="./?cmd=port">Import/Export</a></li>
 		<li class="plugins"><a href="./?cmd=plugins">Plugins</a></li>
 		<li class="themes"><a href="./?cmd=themes">Themes</a></li>
-		<li class="users"><a href="#">Users</a></li>
 	</ul>
 	<?php } ?>
 	<?php if (isset($alert)) { ?>

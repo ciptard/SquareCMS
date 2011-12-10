@@ -322,30 +322,6 @@
 	
 	// Others
 	
-	function check_new_version() {
-		if ($str = http_get_file('http://spoolio.po.gs/current.txt')){
-			$onversion = explode('.',$str);
-			$offversion = explode('.',VERSION);
-			if (intval($onversion[0]) <> intval($offversion[0])){
-				return '<div class="stats square"><h2 class="square major" title="Major new version of Square available">&nbsp;</h2><p><a href="./?cmd=upgrade">'.$str.'</a></p></div>';
-				exit();
-			}
-			if (intval($onversion[1].$onversion[2]) > intval($offversion[1].$offversion[2])){
-				return '<div class="stats square"><h2 class="square minor" title="Minor new version of Square available">&nbsp;</h2><p><a href="./?cmd=upgrade">'.$str.'</a></p></div>';
-				exit();
-			}
-			if (!empty($onversion[3]) && !empty($offversion[3])) {
-				if ($onversion[3].$onversion[4] <> $offversion[3].$offversion[4]) {
-					return '<div class="stats square"><h2 class="square minor" title="New preview version of Square available">&nbsp;</h2><p><a href="./?cmd=upgrade">'.$str.'</a></p></div>';
-					exit();
-				}
-			}
-			return '<div class="stats square"><h2 class="square" title="You are using the current version of Square">&nbsp;</h2><p>'.VERSION.'</p></div>';
-		} else {
-			return '<div class="stats square"><h2 class="square" title="Unable to check for updates, please check at spoolio.co.cc/p/square">&nbsp;</h2><p>'.VERSION.'</p></div>';
-		}
-	}
-	
 	function http_get_file($url)    {
 		$url_stuff = parse_url($url);
 		$port = isset($url_stuff['port']) ? $url_stuff['port']:80;
